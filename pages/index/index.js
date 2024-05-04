@@ -1,4 +1,4 @@
-// index.js
+//index.js
 
 Page({
 
@@ -6,23 +6,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-    levels: [
-      "level1.png",
-      "level2.png",
-      "level3.png",
-      "level4.png"
+    levels:[
+      'level01.png',
+      'level02.png',
+      'level03.png',
+      'level04.png'
     ]
   },
 
-  // 游戏选关
-  chooseLevel: function(e) {
+  /**
+     * 自定义函数--游戏选关
+     */
+  chooseLevel: function (e) {
     // console.log(e)
     let level = e.currentTarget.dataset.level
-    // 跳转游戏页面
-    wx.navigateTo({ 
-      url: '../game/game?level=' + level,
+
+    // 跳转到游戏页面
+    wx.navigateTo({
+      url: '../game/game?level='+level,
     })
   },
+
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -79,6 +84,4 @@ Page({
   onShareAppMessage: function () {
     
   }
-
-
 })

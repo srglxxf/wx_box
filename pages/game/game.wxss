@@ -1,29 +1,35 @@
 /* pages/game/game.wxss */
-/* 游戏画布样式 */
+
+/* 游戏画布 */
+
 canvas{
-  border: 1rpx solid;
-  width: 320px;
-  height: 320px;
+  border: 1px solid;
+  width: 240px;
+  height: 240px;
 }
 
-/* 方向键整体区域 */
-.btnBox{
+
+/* 方向键按钮整体区域 */
+.buttonBox
+{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
 }
 
-/* 方向键第二行 */
-.btnBox view{
+/* 方向键按钮第二行 */
+.buttonBox view{
   display: flex;
   flex-direction: row;
 }
-/* 所有的方向键 */
-.btnBox button{
-  width: 90rpx;
-  height: 90rpx;
-}
 
+/* 所有方向键按钮 */
+
+.buttonBox button
+{
+  width:100rpx;
+  height: 100rpx;
+}
 button{
   margin: 10rpx;
 }

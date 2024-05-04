@@ -5,45 +5,40 @@
     "include": []
   },
   "setting": {
-    "bundle": false,
-    "userConfirmedBundleSwitch": false,
     "urlCheck": true,
-    "scopeDataCheck": false,
-    "coverView": true,
     "es6": true,
     "postcss": true,
-    "compileHotReLoad": false,
-    "lazyloadPlaceholderEnable": false,
-    "preloadBackgroundData": false,
     "minified": true,
+    "newFeature": true,
     "autoAudits": false,
-    "newFeature": false,
-    "uglifyFileName": false,
-    "uploadWithSourceMap": true,
-    "useIsolateContext": true,
-    "nodeModules": false,
-    "enhance": true,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": true,
+    "coverView": true,
     "showShadowRootInWxmlPanel": true,
-    "packNpmManually": false,
-    "enableEngineNative": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true,
-    "showES6CompileOption": false,
-    "minifyWXML": true,
+    "scopeDataCheck": false,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "condition": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.4",
+  "libVersion": "3.2.4",
   "appid": "wx28fbdfbfb7227c87",
-  "projectname": "miniprogram-92",
-  "condition": {},
+  "projectname": "BoxGame",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "game",
+          "pathName": "pages/game/game",
+          "query": "level=1",
+          "scene": null
+        }
+      ]
+    }
+  },
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
