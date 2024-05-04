@@ -1,0 +1,5 @@
+<view class="container">
+  <image src="/images/level01.png" mode="aspectFit" class="image-style"></image>
+  <view class="loading-text">Loading</view>
+  <button class="start-button" bindtap="startGame">开始游戏</button>
+</view>
