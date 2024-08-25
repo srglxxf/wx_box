@@ -1,0 +1,39 @@
+/* index.wxss */
+
+/* 关卡列表区域 */
+.levellist{
+  width: 100%;
+}
+
+/* 单个关卡区域 */
+.level{
+  width: 50%;
+  float: left;
+  margin: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* 选关图片 */
+image{
+  width: 300rpx;
+  height:300rpx;
+}
+
+.continue-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #1AAD19; /* 微信绿色按钮背景 */
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  box-sizing: border-box; /* 注意添加，防止内边距影响尺寸 */
+  /* ... 其他你想要的样式 ... */
+}
+
+.continue-button text {
+  display: block; /* 每个text单独一行 */
+  margin: 5px 0; /* 添加间距 */
+}

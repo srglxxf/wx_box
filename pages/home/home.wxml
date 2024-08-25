@@ -1,0 +1,12 @@
+<view class="container">
+  <image src="/images/level01.png" mode="aspectFit" class="image-style"></image>
+  <view class="loading-text">Loading</view>
+  <view wx:if="{{showLoginButton}}">
+    <button bindtap="login">登录</button>
+  </view>
+  <view wx:else>
+    <text>欢迎回来！</text>
+    <text>当前关卡：{{level ? level + 1 : '没有存储关卡'}}</text>
+    <button class="start-button" bindtap="startGame">开始游戏</button>
+  </view>
+</view>

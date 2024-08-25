@@ -1,0 +1,1 @@
+export const API_BASE_URL = 'https://www.stellardawn.co/game/api'
