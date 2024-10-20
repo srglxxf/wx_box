@@ -58,6 +58,7 @@ Page({
 
   
   login: function() {
+    console.log('开始登陆');
     wx.login({
       success: (res) => {
         console.log('code:', res.code)

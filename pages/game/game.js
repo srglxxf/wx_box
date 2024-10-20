@@ -24,7 +24,9 @@ Page({
     col: 0,
     // 画布大小
     canvasWidth: 240, // 默认宽度
-    canvasHeight: 240 // 默认高度
+    canvasHeight: 240, // 默认高度
+    // 玩家朝向
+    playerDirection: 'left'
   },
 
 
@@ -68,6 +70,7 @@ Page({
    * 自定义函数--绘制画布
    */
   drawCanvas: function() {
+    let pen=this.pen
 
     this.setData({
       canvasHeight : WIDTH * this.rowCount,
@@ -103,7 +106,12 @@ Page({
       }
     }
     //叠加绘制小鸟
-    pen.drawImage('/images/icons/bird.png', this.col * WIDTH, this.row * WIDTH, WIDTH, WIDTH)
+    if (this.playerDirection == 'left'){
+      pen.drawImage('/images/icons/bird.png', this.col * WIDTH, this.row * WIDTH, WIDTH, WIDTH)
+    } else{
+      pen.drawImage('/images/icons/bird_right.png', this.col * WIDTH, this.row * WIDTH, WIDTH, WIDTH)
+    }
+
 
     //渲染画布，重要！！,相当于一个结尾
     pen.draw()
@@ -166,6 +174,7 @@ Page({
           }
         }
       }
+      this.playerDirection = 'left'
       //重新绘制地图
       this.drawCanvas();
       //检查游戏是否成功
@@ -228,6 +237,7 @@ Page({
           }
         }
       }
+      this.playerDirection = 'right'
       //重新绘制地图
       this.drawCanvas();
       //检查游戏是否成功

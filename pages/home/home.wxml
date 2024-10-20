@@ -1,8 +1,7 @@
 <view class="container">
   <image src="/images/level01.png" mode="aspectFit" class="image-style"></image>
-  <view class="loading-text">Loading</view>
   <view wx:if="{{showLoginButton}}">
-    <button bindtap="login">登录</button>
+    <button class="login-button" bindtap="login">登录</button>
   </view>
   <view wx:else>
     <text>欢迎回来！</text>

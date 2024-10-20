@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-top: 80px;
 }
 
 .image-style {
@@ -13,12 +14,12 @@
   margin-bottom: 20px; /* 图片与文本间距 */
 }
 
-.loading-text {
-  margin-bottom: 20px; /* 文本与按钮间距 */
-  /* 添加样式以满足设计需求 */
-  font-size: 18px; /* 示例字体大小 */
+.login-button {
+  /* 添加按钮样式 */
+  margin-top: 105px;
 }
 
 .start-button {
   /* 添加按钮样式 */
+  margin-top: 80px;
 }
